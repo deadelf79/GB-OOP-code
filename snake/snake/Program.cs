@@ -10,7 +10,18 @@ namespace snake
     {
         static void Main(string[] args)
         {
-            Console.Beep();
+            int x = 16, y = 8;
+            char player = '@';
+
+            DrawPixel(x, y, player);
+
+            Console.ReadLine();
+        }
+
+        static void DrawPixel(int x, int y, char pixel)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(pixel);
         }
     }
 }
