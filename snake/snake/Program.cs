@@ -10,18 +10,23 @@ namespace snake
     {
         static void Main(string[] args)
         {
-            int x = 16, y = 8;
-            char player = '@';
+            Pixel p1 = new Pixel();
 
-            DrawPixel(x, y, player);
+            p1.x = 12;
+            p1.y = 6;
+            p1.sym = '@';
+
+            DrawPixel(p1);
 
             Console.ReadLine();
         }
 
-        static void DrawPixel(int x, int y, char pixel)
+        static void DrawPixel(Pixel point)
         {
-            Console.SetCursorPosition(x, y);
-            Console.Write(pixel);
+            Console.SetCursorPosition(point.x, point.y);
+            Console.Write(point.sym);
         }
     }
+
+    
 }
