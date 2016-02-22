@@ -18,6 +18,14 @@ namespace snake
 
             DrawPixel(p1);
 
+            Pixel p2 = new Pixel();
+
+            p2.x = 6;
+            p2.y = 12;
+            p2.sym = 'E';
+
+            p2.Draw();
+
             Console.ReadLine();
         }
 

@@ -8,7 +8,13 @@ namespace snake
 {
     class Pixel
     {
-            public int x, y;
-            public char sym;
+        public int x, y;
+        public char sym;
+
+        public void Draw()
+        {
+            Console.SetCursorPosition(this.x, this.y);
+            Console.Write(this.sym);
+        }
     }
 }
